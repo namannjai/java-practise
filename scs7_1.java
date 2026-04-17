@@ -1,8 +1,9 @@
 public class scs7_1{
     public static void main(String[] args) {
-        int day;
-        int month;
-        int year;
+        int day=31;
+        int month=12;
+        int year=99;
+        
 
 
         int maxDays =31;
@@ -16,13 +17,20 @@ public class scs7_1{
         }
 
 
-        else if(month==1 || month ==3 || month==5 || month==7 || month==9 || month==11){
-            maxDays=31;
-        }
-        else if(month==4 || month==6 || month==8 || month==10 || month==12){
+        
+        else if(month==4 || month==6 || month==9 || month==11 ){
             maxDays=30;
         }
+        day++;
+        if(day >maxDays){
+            day=1;
+            month++;
 
-        
+            if(month>12){
+                month=1;
+                year++;
+            }
+        }
+        System.out.println(day + "-" + month + "-"  + (2000 +year));
     }
 }
