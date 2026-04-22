@@ -1,5 +1,5 @@
 
-public class array1{
+public class arrayEnhanced{
     public static void main(String []a){
         int nums[]=new int[5];
      nums[0]=1;
@@ -7,9 +7,10 @@ public class array1{
      nums[2]=3;
      nums[3]=24;
      nums[4]=5;
-          for(int i =0;i<4;){
-            System.out.println(nums[i]);
-            ++i;
-          }
+
+     for(int n:nums){
+        System.out.println(n);
+     }
+        
     }
 }
