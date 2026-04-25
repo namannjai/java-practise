@@ -1,3 +1,4 @@
+
 class AdvCalc extends Calsi
 {
     public int multi(int a ,int b){
